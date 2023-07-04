@@ -1,0 +1,10 @@
+{
+    "routes": [
+      { "src": "/", "dest": "/" },
+      { "src": "/encrypt", "dest": "/" }
+      { "src": "/decrypt", "dest": "/" }
+      { "src": "/steganograph", "dest": "/" }
+      { "src": "/desteganograph", "dest": "/" }
+    //   { "src": "/description", "dest": "/" }
+    ]
+  }
