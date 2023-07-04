@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Encrypt: FC = () => {
   const [textOrFile, setTextOrFile] = useState<boolean>(false);
-  const [encType, setEncType] = useState<string>("");
+  const [_encType, setEncType] = useState<string>("");
 
   return (
     <div className="bg-teal-600 w-screen h-screen font-mono">
@@ -41,7 +41,7 @@ const Encrypt: FC = () => {
             </div>
             {textOrFile ? (
               <textarea
-                className="textarea textarea-warning w-full max-w-xs bg-slate-500 rounded-lg font-mono text-black h-auto"
+                className="textarea textarea-warning w-full max-w-xs bg-slate-500 rounded-lg font-mono text-black h-10"
                 placeholder="Type here"
               ></textarea>
             ) : (

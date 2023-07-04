@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const Encrypt: FC = () => {
   const [textOrFile, setTextOrFile] = useState<boolean>(false);
-  const [decType, setDncType] = useState<string>("");
+  const [_decType, setDncType] = useState<string>("");
 
   return (
     <div className="bg-teal-600 w-screen h-screen font-mono">
