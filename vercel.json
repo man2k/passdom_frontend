@@ -1,5 +1,10 @@
 {
-    "rewrites":  [
-      {"source": "/(.*)", "destination": "/"}
+    "rewrites": [
+      { "source": "/", "destination": "/" },
+      { "source": "/encrypt", "destination": "/" }
+      { "source": "/decrypt", "destination": "/" }
+      { "source": "/steganograph", "destination": "/" }
+      { "source": "/desteganograph", "destination": "/" }
+    //   { "src": "/description", "dest": "/" }
     ]
-  }
+}
