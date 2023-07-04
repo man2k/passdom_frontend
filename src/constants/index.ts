@@ -16,3 +16,18 @@ export const navLinks = [
         title: "De-Steganograph",
     },
 ]
+
+export const ChipherList = [
+    {
+      label: "aes-128-cbc",
+      value: "aes-128-cbc",
+    },
+    {
+      label: "aes-192-cbc",
+      value: "aes-192-cbc",
+    },
+    {
+      label: "aes-256-cbc",
+      value: "aes-256-cbc",
+    },
+  ];
