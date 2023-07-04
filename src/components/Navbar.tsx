@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import { FC } from "react";
 const Navbar: FC = () => {
   return (
-    <nav className="w-full flex justify-center bg-teal-700">
+    <nav className="w-full flex justify-center bg-inherit">
       <ul className="flex gap-9 p-2">
         <li>
           <Link
             to={"/"}
-            className="btn btn-secondary bg-teal-700 text-base font-bold rounded-md text-black"
+            className="btn btn-secondary bg-teal-600 text-base font-bold rounded-md text-black"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const Navbar: FC = () => {
           <li>
             <Link
               to={`/${item.id}`}
-              className="btn bg-teal-700 text-base text-black font-bold rounded-md"
+              className="btn bg-teal-600 text-base text-black font-bold rounded-md"
             >
               {item.title}
             </Link>

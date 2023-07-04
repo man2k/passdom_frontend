@@ -10,13 +10,13 @@ const Home: FC = () => {
           <h1 className="card text-8xl flex flex-wrap font-extralight font-mono text-slate-950">
             <TypeAnimation
               sequence={[
-                ".Encrypt.",
+                ".ENCRYPT.",
                 800,
-                ".Decrypt.",
+                ".DECRYPT.",
                 800,
-                ".Steganograph.",
+                ".STEGANOGRAPH.",
                 800,
-                ".De-Steganograph.",
+                ".DE-STEGANOGRAPH.",
                 800,
               ]}
               speed={50}
