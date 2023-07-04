@@ -1,8 +1,8 @@
 import { FC } from "react";
-import encryption from "../assets/encryption (1).png";
-import decryption from "../assets/browser.png";
+import encryption from "../assets/encryption.png";
+import decryption from "../assets/decryption.png";
 import steg from "../assets/steg.png";
-import desteg from "../assets/password.png";
+import desteg from "../assets/unsteg.png";
 
 interface CardProp {
   title: string;
@@ -21,17 +21,17 @@ const Card: FC<CardProp> = ({ title }) => {
           <></>
         )}
         {title === "Decrypt" ? (
-          <img src={decryption} alt="Encrypt" className="w-48 h-48 p-2" />
+          <img src={decryption} alt="Decrypt" className="w-48 h-48 p-2" />
         ) : (
           <></>
         )}
         {title === "Steganograph" ? (
-          <img src={steg} alt="Encrypt" className="w-48 h-48 p-2" />
+          <img src={steg} alt="Steganograph" className="w-48 h-48 p-2" />
         ) : (
           <></>
         )}
         {title === "De-Steganograph" ? (
-          <img src={desteg} alt="Encrypt" className="w-48 h-48 p-2" />
+          <img src={desteg} alt="De-Steganograph" className="w-48 h-48 p-2" />
         ) : (
           <></>
         )}

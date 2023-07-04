@@ -10,7 +10,7 @@ const App: FC = () => {
       className="w-full bg-teal-700 h-full overflow-hidden"
     >
       <div className="flex justify-center items-center w-full">
-        <div className="xl:max-w-[1280px] w-full">
+        <div className="xl:max-w-[1920px] w-full">
           <Navbar />
         </div>
       </div>

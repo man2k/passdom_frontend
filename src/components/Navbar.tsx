@@ -5,7 +5,7 @@ const Navbar: FC = () => {
   return (
     <nav className="w-full flex justify-center bg-inherit">
       <ul className="flex gap-9 p-2">
-        <li>
+        <li key="home">
           <Link
             to={"/"}
             className="btn btn-secondary bg-teal-600 text-base font-bold rounded-md text-black"
@@ -27,10 +27,10 @@ const Navbar: FC = () => {
           </Link>
         </li>
         {navLinks.map((item) => (
-          <li>
+          <li key={item.id}>
             <Link
               to={`/${item.id}`}
-              className="btn bg-teal-600 text-base text-black font-bold rounded-md"
+              className="btn bg-teal-600 text-base text-black rounded-md"
             >
               {item.title}
             </Link>
