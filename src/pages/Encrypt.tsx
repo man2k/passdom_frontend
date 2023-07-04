@@ -1,6 +1,4 @@
-type Props = {};
-
-const Encrypt = (props: Props) => {
+const Encrypt = () => {
   return <div>Encrypt</div>;
 };
 

@@ -1,6 +1,4 @@
-type Props = {};
-
-const DeSteganograph = (props: Props) => {
+const DeSteganograph = () => {
   return <div>DeSteganograph</div>;
 };
 
