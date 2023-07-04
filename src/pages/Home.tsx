@@ -16,10 +16,16 @@ const Home: FC = () => {
                 800,
                 ".STEGANOGRAPH.",
                 800,
-                ".DE-STEGANOGRAPH.",
+                ".DE STEGANOGRAPH.",
+                800,
+                ".ENCODE.",
+                800,
+                ".DECODE.",
                 800,
               ]}
+              // omitDeletionAnimation={true}
               speed={50}
+              deletionSpeed={70}
               repeat={Infinity}
               wrapper="h1"
               cursor={false}
@@ -38,8 +44,14 @@ const Home: FC = () => {
           <Link to="/steganograph">
             <Card title="Steganograph" />
           </Link>
-          <Link to="/desteganogrph">
+          <Link to="/desteganograph">
             <Card title="De-Steganograph" />
+          </Link>
+          <Link to="/encode">
+            <Card title="Encode" />
+          </Link>
+          <Link to="/decode">
+            <Card title="Decode" />
           </Link>
         </div>
       </div>

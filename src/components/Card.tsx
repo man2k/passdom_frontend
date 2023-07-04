@@ -3,7 +3,7 @@ import encryption from "../assets/encryption.png";
 import decryption from "../assets/decryption.png";
 import steg from "../assets/steg.png";
 import desteg from "../assets/unsteg.png";
-
+import encdec from "../assets/decode.png";
 interface CardProp {
   title: string;
 }
@@ -32,6 +32,16 @@ const Card: FC<CardProp> = ({ title }) => {
         )}
         {title === "De-Steganograph" ? (
           <img src={desteg} alt="De-Steganograph" className="w-48 h-48 p-2" />
+        ) : (
+          <></>
+        )}
+        {title === "Encode" ? (
+          <img src={encdec} alt="Encode" className="w-48 h-48 p-2" />
+        ) : (
+          <></>
+        )}
+        {title === "Decode" ? (
+          <img src={encdec} alt="Decode" className="w-48 h-48 p-2 rotate-180" />
         ) : (
           <></>
         )}

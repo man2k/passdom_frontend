@@ -5,6 +5,8 @@
       { "source": "/decrypt", "destination": "/" }
       { "source": "/steganograph", "destination": "/" }
       { "source": "/desteganograph", "destination": "/" }
+      { "source": "/encode", "destination": "/" }
+      { "source": "/decode", "destination": "/" }
     //   { "src": "/description", "dest": "/" }
     ]
 }

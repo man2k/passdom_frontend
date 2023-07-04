@@ -2,6 +2,8 @@ import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { Home, Encrypt, Decrypt, Steganograph, DeSteganograph } from "./pages";
 import { FC } from "react";
+import Encode from "./pages/Encode";
+import Decode from "./pages/Decode";
 
 const App: FC = () => {
   return (
@@ -22,6 +24,8 @@ const App: FC = () => {
             <Route path="/decrypt" element={<Decrypt />} />
             <Route path="/steganograph" element={<Steganograph />} />
             <Route path="/desteganograph" element={<DeSteganograph />} />
+            <Route path="/encode" element={<Encode />} />
+            <Route path="/decode" element={<Decode />} />
           </Routes>
         </div>
       </div>
