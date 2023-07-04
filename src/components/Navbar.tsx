@@ -1,10 +1,15 @@
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { FC } from "react";
+import logo from "/passdom-logo.png";
+
 const Navbar: FC = () => {
   return (
     <nav className="w-full flex justify-center bg-inherit">
-      <ul className="flex gap-9 p-2">
+      <Link to="/">
+        <img src={logo} alt="logo" className="w-14 h-14 rounded-full p-2" />
+      </Link>
+      <ul className="flex gap-9 p-2 w-full justify-center pr-16">
         <li key="home">
           <Link
             to={"/"}
