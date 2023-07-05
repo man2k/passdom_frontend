@@ -1,12 +1,11 @@
 {
     "rewrites": [
       { "source": "/", "destination": "/" },
-      { "source": "/encrypt", "destination": "/" }
-      { "source": "/decrypt", "destination": "/" }
-      { "source": "/steganograph", "destination": "/" }
-      { "source": "/desteganograph", "destination": "/" }
-      { "source": "/encode", "destination": "/" }
+      { "source": "/encrypt", "destination": "/" },
+      { "source": "/decrypt", "destination": "/" },
+      { "source": "/steganograph", "destination": "/" },
+      { "source": "/desteganograph", "destination": "/" },
+      { "source": "/encode", "destination": "/" },
       { "source": "/decode", "destination": "/" }
-    //   { "src": "/description", "dest": "/" }
     ]
 }
