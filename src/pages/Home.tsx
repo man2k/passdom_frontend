@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
 const Home: FC = () => {
   return (
-    <div className="w-full h-full bg-teal-600 flex flex-col justify-center">
+    <div className="w-screen h-full bg-teal-600 flex flex-col justify-center">
       <div className="bg-teal-600 w-full justify-center">
         <div className="flex justify-center pb-2">
           <h1 className="card text-8xl flex flex-wrap font-extralight font-mono text-slate-950">
