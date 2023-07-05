@@ -13,7 +13,6 @@ const Steganograph: FC = () => {
             <img src={steg} alt="Shoes" className="w-48 h-44 p-2" />
           </figure>
           <div className="card-body">
-            {/* <div className="flex justify-between"> */}
             <h2 className="card-title font-mono text-black text-2xl h-6 w-full">
               <span className="w-full">
                 <TypeAnimation
