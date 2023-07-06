@@ -10,7 +10,7 @@ const DeSteganograph: FC = () => {
       <div className="flex justify-center h-full items-center">
         <div className="card bg-amber-600 shadow-2xl rounded-lg pt-2 w-96">
           <figure>
-            <img src={unsteg} alt="Shoes" className="w-48 h-48 p-1" />
+            <img src={unsteg} alt="unsteg" className="w-48 h-48 p-1" />
           </figure>
           <div className="card-body">
             <h2 className="card-title font-mono text-black text-2xl h-6 w-full">
