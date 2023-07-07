@@ -2,13 +2,18 @@ import CardC from "../components/CardC";
 import { FC } from "react";
 import Img from "../components/Img";
 import TextBox from "../components/TextBox";
+import encdec from "../assets/encdec.png";
+// import { dirname } from "path";
+
+// import * as path from "path";
 
 const Encode: FC = () => {
   return (
     <div className="bg-teal-600 w-screen h-screen font-mono">
       <div className="flex justify-center h-full items-center">
+        {/* {console.log(path.relative("../assets/decode.png"))} */}
         <CardC
-          Img={<Img url="../src/assets/decode.png" title="Encode" />}
+          Img={<Img imgData={encdec} title="Encode" />}
           title="Encode"
           textarea={true}
           TypeAnimationSequence={[

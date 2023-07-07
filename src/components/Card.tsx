@@ -3,7 +3,7 @@ import encryption from "../assets/encryption.png";
 import decryption from "../assets/decryption.png";
 import steg from "../assets/steg.png";
 import desteg from "../assets/unsteg.png";
-import encdec from "../assets/decode.png";
+import encdec from "../assets/encdec.png";
 interface CardProp {
   title: string;
 }

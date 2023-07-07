@@ -1,14 +1,14 @@
 import { FC } from "react";
 
 interface prop {
-  url: string;
+  imgData: string;
   title?: string;
 }
-const Img: FC<prop> = ({ url, title }) => {
+const Img: FC<prop> = ({ imgData, title }) => {
   return (
     <>
-      {console.log(url)}
-      <img src={url} alt={`${title}`} className="w-48 h-48 p-1" />
+      {/* {console.log(url)} */}
+      <img src={imgData} alt={`${title}`} className="w-48 h-48 p-1" />
     </>
   );
 };

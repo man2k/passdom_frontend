@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import * as path from "path";
 // import { _default } from "react-type-animation";
 // type SequenceElement =
 //   | string
