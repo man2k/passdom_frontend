@@ -6,9 +6,9 @@ import { useState } from "react";
 const Steganograph: FC = () => {
   const [isShown, setIsShown] = useState<boolean>(false);
   return (
-    <div className="bg-teal-600 w-screen h-screen font-mono">
+    <div className="w-screen h-screen font-mono">
       <div className="flex justify-center h-full grow items-center">
-        <div className="card bg-amber-600 shadow-2xl rounded-lg pt-2 w-auto">
+        <div className="card bg-amber-600 shadow-2xl rounded-lg pt-[0.2rem] w-auto">
           <figure>
             <img src={steg} alt="Shoes" className="w-48 h-44 p-2" />
           </figure>

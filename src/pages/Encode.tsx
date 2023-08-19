@@ -9,7 +9,7 @@ import encdec from "../assets/encdec.png";
 
 const Encode: FC = () => {
   return (
-    <div className="bg-teal-600 w-screen h-screen font-mono">
+    <div className="w-screen h-screen font-mono">
       <div className="flex justify-center h-full items-center">
         {/* {console.log(path.relative("../assets/decode.png"))} */}
         <CardC

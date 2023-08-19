@@ -37,5 +37,8 @@ export default {
       "coffee",
       "winter",
     ],
+    base: true,
+    styled: true,
+    utils: true,
   },
 };

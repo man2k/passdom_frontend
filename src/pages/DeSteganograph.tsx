@@ -6,9 +6,9 @@ import { useState } from "react";
 const DeSteganograph: FC = () => {
   const [isShown, setIsShown] = useState<boolean>(false);
   return (
-    <div className="bg-teal-600 w-screen h-screen font-mono">
+    <div className="w-screen h-screen font-mono">
       <div className="flex justify-center h-full items-center">
-        <div className="card bg-amber-600 shadow-2xl rounded-lg pt-2 w-96">
+        <div className="card bg-amber-600 shadow-2xl rounded-lg pt-1 w-96">
           <figure>
             <img src={unsteg} alt="unsteg" className="w-48 h-48 p-1" />
           </figure>

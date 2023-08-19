@@ -15,6 +15,14 @@ export const navLinks = [
         id: "desteganograph",
         title: "De-Steganograph",
     },
+    {
+        id: "encode",
+        title: "Encode",
+    },
+    {
+        id: "Decode",
+        title: "Decode",
+    },
 ]
 
 export const ChipherList = [

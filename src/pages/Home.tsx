@@ -2,12 +2,14 @@ import Card from "../components/Card";
 import { FC } from "react";
 import { Link } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
+import { navLinks } from "../constants/index";
+
 const Home: FC = () => {
   return (
-    <div className="w-screen h-full bg-teal-600 flex flex-col justify-center">
-      <div className="bg-teal-600 w-full justify-center">
+    <div className="w-screen h-full flex flex-col justify-center">
+      <div className=" w-full justify-center">
         <div className="flex justify-center pb-2">
-          <h1 className="card text-8xl flex flex-wrap font-extralight font-mono text-slate-950">
+          <h1 className="card text-8xl flex flex-wrap font-extralight font-mono">
             <TypeAnimation
               sequence={[
                 ".ENCRYPT.",
@@ -35,24 +37,11 @@ const Home: FC = () => {
       </div>
       <div className="flex justify-center">
         <div className="flex flex-wrap justify-center gap-12">
-          <Link to="/encrypt">
-            <Card title="Encrypt" />
-          </Link>
-          <Link to="/decrypt">
-            <Card title="Decrypt" />
-          </Link>
-          <Link to="/steganograph">
-            <Card title="Steganograph" />
-          </Link>
-          <Link to="/desteganograph">
-            <Card title="De-Steganograph" />
-          </Link>
-          <Link to="/encode">
-            <Card title="Encode" />
-          </Link>
-          <Link to="/decode">
-            <Card title="Decode" />
-          </Link>
+          {navLinks.map((item) => (
+            <Link to={`/${item.id}`}>
+              <Card title={item.title} />
+            </Link>
+          ))}
         </div>
       </div>
     </div>

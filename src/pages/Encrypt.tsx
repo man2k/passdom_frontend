@@ -9,7 +9,7 @@ const Encrypt: FC = () => {
   const [_encType, setEncType] = useState<string>("");
 
   return (
-    <div className="bg-teal-600 w-screen h-screen font-mono">
+    <div className="w-screen h-screen font-mono">
       <div className="flex justify-center h-full items-center">
         <div className="card bg-amber-600 shadow-2xl rounded-lg pt-2 w-96">
           <figure>

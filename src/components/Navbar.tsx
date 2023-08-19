@@ -1,19 +1,21 @@
 import { navLinks } from "../constants";
 import { Link } from "react-router-dom";
 import { FC } from "react";
-import logo from "/passdom-logo.png";
+import logo from "/Black logo - no background.png";
 
 const Navbar: FC = () => {
   return (
-    <nav className="w-full flex justify-center bg-inherit">
-      <Link to="/">
-        <img src={logo} alt="logo" className="w-14 h-14 rounded-full p-2" />
-      </Link>
-      <ul className="flex gap-9 p-2 w-full justify-center pr-16">
+    <nav className="w-full flex justify-center fixed z-10">
+      <div className="left-0 absolute">
+        <Link to="/">
+          <img src={logo} alt="logo" className="w-14 h-14 rounded-full p-2" />
+        </Link>
+      </div>
+      <ul className="flex gap-9 w-max justify-center items-center rounded-full shadow-lg shadow-base-200 bg-base-100 border-2">
         <li key="home">
           <Link
             to={"/"}
-            className="btn btn-secondary bg-teal-600 text-base font-bold rounded-md text-black"
+            className="btn btn-secondary text-base font-bold rounded-full w-max"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +37,7 @@ const Navbar: FC = () => {
           <li key={item.id}>
             <Link
               to={`/${item.id}`}
-              className="btn bg-teal-600 text-base text-black rounded-md"
+              className="btn text-base rounded-full w-max bg-black"
             >
               {item.title}
             </Link>

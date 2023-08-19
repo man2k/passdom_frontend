@@ -7,16 +7,13 @@ import Decode from "./pages/Decode";
 
 const App: FC = () => {
   return (
-    <div
-      data-theme="cyberpunk"
-      className="w-full bg-teal-700 h-full overflow-hidden"
-    >
+    <div data-theme="halloween" className="w-full h-full">
       <div className="flex justify-center items-center w-full">
         <div className="xl:max-w-[1920px] w-full">
           <Navbar />
         </div>
       </div>
-      <div className="">
+      <div className="mt-16">
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
