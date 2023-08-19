@@ -10,7 +10,7 @@ interface CardProp {
 
 const Card: FC<CardProp> = ({ title }) => {
   return (
-    <div className="card bg-base-200 w-96 h-72 shadow-xl rounded-xl mx-5 my-2">
+    <div className="card bg-base-200 w-96 h-72 shadow-xl rounded-xl mx-5 drop-shadow-lg">
       <div className="card-body items-center text-center">
         <h2 className="card-title text-2xl">{title}</h2>
       </div>

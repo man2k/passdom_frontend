@@ -6,10 +6,10 @@ import { navLinks } from "../constants/index";
 
 const Home: FC = () => {
   return (
-    <div className="w-screen h-full flex flex-col justify-center">
+    <div className="w-full h-full flex flex-col justify-center">
       <div className=" w-full justify-center">
         <div className="flex justify-center pb-2">
-          <h1 className="card text-8xl flex flex-wrap font-extralight font-mono">
+          <h1 className="card text-8xl flex flex-row font-extralight font-mono">
             <TypeAnimation
               sequence={[
                 ".ENCRYPT.",
@@ -35,7 +35,7 @@ const Home: FC = () => {
           </h1>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center my-10">
         <div className="flex flex-wrap justify-center gap-12">
           {navLinks.map((item) => (
             <Link to={`/${item.id}`}>

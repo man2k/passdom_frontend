@@ -31,7 +31,7 @@ const Encode: FC = () => {
           }
           labelAboveBox={
             <label className="text-black bg-amber-500 rounded-lg shadow-2xl w-full p-2">
-              <span className="italic p-2 pl-0">
+              <span className="italic p-2 pl-0 whitespace-pre-wrap">
                 Input any salt or random words you want your secret mixed in:
               </span>
             </label>

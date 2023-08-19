@@ -11,7 +11,7 @@ const Navbar: FC = () => {
           <img src={logo} alt="logo" className="w-14 h-14 rounded-full p-2" />
         </Link>
       </div>
-      <ul className="flex gap-9 w-max justify-center items-center rounded-full shadow-lg shadow-base-200 bg-base-100 border-2">
+      <ul className="flex gap-9 w-max justify-center items-center rounded-full shadow-lg shadow-gray-500 bg-base-100 border-2">
         <li key="home">
           <Link
             to={"/"}
@@ -35,10 +35,7 @@ const Navbar: FC = () => {
         </li>
         {navLinks.map((item) => (
           <li key={item.id}>
-            <Link
-              to={`/${item.id}`}
-              className="btn text-base rounded-full w-max bg-black"
-            >
+            <Link to={`/${item.id}`} className="btn text-base rounded-full">
               {item.title}
             </Link>
           </li>
